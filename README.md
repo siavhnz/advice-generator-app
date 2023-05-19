@@ -37,6 +37,8 @@ Users should be able to:
 
 ## My process
 
+- Create Components
+
 ### Built with
 
 ### What I learned

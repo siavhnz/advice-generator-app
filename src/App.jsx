@@ -1,11 +1,9 @@
-import { useState } from 'react'
+import Advise from './components/advise'
 
 function App() {
 
   return (
-    <>
-      Advise Generator App
-    </>
+    <Advise />
   )
 }
 
