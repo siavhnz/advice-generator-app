@@ -9,6 +9,7 @@ const Advice = () => {
     const [data, setData] = useState({
         loading: false,
         firstLoad: true,
+        hasError: false,
         slip: {}
     });
 
@@ -22,8 +23,17 @@ const Advice = () => {
         })
 
         fetch("https://api.adviceslip.com/advice")
-            .then(res => res.json())
-            .then(data => setData({ slip: data.slip, loading: false, firstLoad: false }))
+            .then(res => {
+                if (res.ok) {
+                    return res.json();
+                }
+
+                throw new Error('Something went wrong');
+            })
+            .then(data => setData({ slip: data.slip, loading: false, firstLoad: false, hasError: false }))
+            .catch((error) => {
+                setData({ slip: {}, loading: false, firstLoad: false, hasError: true })
+            })
     }
 
     const getAdviceHandler = (e) => {
@@ -47,6 +57,21 @@ const Advice = () => {
                 <CubeLoader />
             </button>
 
+        </div >
+    }
+
+    if (data.hasError) {
+        return <div className={styles.container}>
+
+            <p className={styles.error}>
+                Somthing went wrong. Please try again
+            </p>
+            <div className={styles.divider}></div>
+            <button className={styles.dice} onClick={(e) => getAdviceHandler(e)} aria-label="click to get another advice">
+                {
+                    data.loading ? <CubeLoader /> : <DiceIcon aria-hidden={true} focusable={false} />
+                }
+            </button>
         </div >
     }
 

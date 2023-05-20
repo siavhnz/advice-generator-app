@@ -19,12 +19,19 @@
     text-align: center;
 }
 
+
 .advice {
     font-size: 1.45rem;
     line-height: 2.12rem;
     font-weight: bold;
     text-align: center;
     color: var(--color-light-cyan);
+}
+
+.error {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:brown;
 }
 
 .divider {
