@@ -39,6 +39,7 @@ Users should be able to:
 
 - Create Components
 - Work on mobile/desktop design based on `design` folder
+- Create a cube loader
 
 ### Built with
 

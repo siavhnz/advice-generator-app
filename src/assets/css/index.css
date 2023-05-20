@@ -1,7 +1,7 @@
 :root {
   /* colors */
   --color-light-cyan: hsl(193, 38%, 86%);
-  --color-neon-green: hsl(150, 100%, 66%);
+  --color-neon-green: #52ffa8;
   --color-grayish-blue: hsl(217, 19%, 38%);
   --color-dark-grayish-blue: hsl(217, 19%, 24%);
   --color-dark-blue: hsl(218, 23%, 16%);

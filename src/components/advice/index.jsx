@@ -1,4 +1,5 @@
 import { ReactComponent as DiceIcon } from "../../assets/images/icon-dice.svg";
+import CubeLoader from "../ui/CubeLoader";
 import styles from "./index.module.css";
 
 
@@ -15,7 +16,8 @@ const Advice = () => {
         </p>
         <div className={styles.divider}></div>
         <button className={styles.dice} aria-label="click to get another advice">
-            <DiceIcon aria-hidden={true} focusable={false} />
+            {/* <DiceIcon aria-hidden={true} focusable={false} /> */}
+            <CubeLoader />
         </button>
 
     </div >

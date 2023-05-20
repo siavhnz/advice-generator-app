@@ -1,0 +1,85 @@
+.container {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+}
+
+.cube {
+    transform-style: preserve-3d;
+    animation: turn 2s linear infinite;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.face {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #aaa;
+    background-color: var(--color-neon-green);
+}
+
+.front  { transform: rotateY(  0deg) translateZ(0.75rem); }
+.right  { transform: rotateY( 90deg) translateZ(0.75rem); }
+.back   { transform: rotateY(180deg) translateZ(0.75rem); }
+.left   { transform: rotateY(-90deg) translateZ(0.75rem); }
+.top    { transform: rotateX( 90deg) translateZ(0.75rem); }
+.bottom { transform: rotateX(-90deg) translateZ(0.75rem); }
+
+.show-front  { transform: translateZ(-0.75rem) rotateY(   0deg); }
+.show-right  { transform: translateZ(-0.75rem) rotateY( -90deg); }
+.show-back   { transform: translateZ(-0.75rem) rotateY(-180deg); }
+.show-left   { transform: translateZ(-0.75rem) rotateY(  90deg); }
+.show-top    { transform: translateZ(-0.75rem) rotateX( -90deg); }
+.show-bottom { transform: translateZ(-0.75rem) rotateX(  90deg); }
+
+
+@keyframes turn {
+    0% {
+        transform: translateZ(-0.75rem) rotateY(   0deg);
+    }
+    8.33% {
+        transform: translateZ(-0.75rem) rotateY(   0deg);
+    }
+    16.66% {
+        transform: translateZ(-0.75rem) rotateY(-180deg);
+    }
+    24.99% {
+        transform: translateZ(-0.75rem) rotateY(-180deg);
+    }
+    33.32% {
+        transform: translateZ(-0.75rem) rotateY( -90deg);
+    }
+    41.65% {
+        transform: translateZ(-0.75rem) rotateY( -90deg);
+    }
+    49.98% {
+        transform: translateZ(-0.75rem) rotateX( -90deg);
+    }
+    58.31% {
+        transform: translateZ(-0.75rem) rotateX( -90deg);
+    }
+    66.64% {
+        transform: translateZ(-0.75rem) rotateY(  90deg);
+    }
+    74.97% {
+        transform: translateZ(-0.75rem) rotateY(  90deg);
+    }
+    83.3% { 
+        transform: translateZ(-0.75rem) rotateX(  90deg);
+    }
+    91.63% { 
+        transform: translateZ(-0.75rem) rotateX(  90deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cube {
+      animation: none;
+      transform: rotate3d(1, 1, 0, 0deg);
+    }
+}
