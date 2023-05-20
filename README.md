@@ -40,6 +40,7 @@ Users should be able to:
 - Create Components
 - Work on mobile/desktop design based on `design` folder
 - Create a cube loader
+- Work on advice api
 
 ### Built with
 
@@ -48,6 +49,12 @@ Users should be able to:
 ### Continued development
 
 ### Useful resources
+
+[Create Cube - CSS](https://codepen.io/desandro/pen/KRWjzm)
+
+[Dice Icons](https://game-icons.net/tags/dice.html)
+
+[Create Placeholder](https://medium.com/@divbydiv/css-only-content-placeholder-with-animation-aba4fc7d814)
 
 ## Author
 

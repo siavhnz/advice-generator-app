@@ -1,4 +1,5 @@
 // https://codepen.io/desandro/pen/KRWjzm
+// https://game-icons.net/tags/dice.html
 
 import styles from "./CubeLoader.module.css";
 import { ReactComponent as Dice1Icon } from "../../assets/images/dice-1.svg";
