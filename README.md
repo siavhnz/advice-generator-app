@@ -38,6 +38,7 @@ Users should be able to:
 ## My process
 
 - Create Components
+- Work on mobile/desktop design based on `design` folder
 
 ### Built with
 

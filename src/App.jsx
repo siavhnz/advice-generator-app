@@ -1,9 +1,9 @@
-import Advise from './components/advise'
+import Advice from './components/advice'
 
 function App() {
 
   return (
-    <Advise />
+    <Advice />
   )
 }
 
