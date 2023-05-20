@@ -42,7 +42,7 @@ const Advice = () => {
     }
 
     if (data.loading && data.firstLoad) {
-        return <div className={`${styles.container}`}>
+        return <main className={`${styles.container}`}>
 
             <h2 className={`${styles.title} ${styles.placeholder}`}>
                 ADVICE #117
@@ -57,11 +57,11 @@ const Advice = () => {
                 <CubeLoader />
             </button>
 
-        </div >
+        </main>
     }
 
     if (data.hasError) {
-        return <div className={styles.container}>
+        return <main className={styles.container}>
 
             <p className={styles.error}>
                 Somthing went wrong. Please try again
@@ -72,10 +72,10 @@ const Advice = () => {
                     data.loading ? <CubeLoader /> : <DiceIcon aria-hidden={true} focusable={false} />
                 }
             </button>
-        </div >
+        </main>
     }
 
-    return <div className={styles.container}>
+    return <main className={styles.container}>
 
         <h2 className={styles.title}>
             advice #{data.slip.id}
@@ -89,7 +89,7 @@ const Advice = () => {
                 data.loading ? <CubeLoader /> : <DiceIcon aria-hidden={true} focusable={false} />
             }
         </button>
-    </div >
+    </main>
 }
 
 export default Advice;

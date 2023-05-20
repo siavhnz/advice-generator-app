@@ -32,8 +32,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution: [frontendmentor.io](https://www.frontendmentor.io/solutions/?)
+
+- Live Site: [cloudflare](https://advice-generator-app-6q9.pages.dev/)
 
 ## My process
 
@@ -44,9 +45,15 @@ Users should be able to:
 
 ### Built with
 
+- React
+
 ### What I learned
 
+I enjoyed creating Cube loader component and learned a lit about 3D in CSS
+
 ### Continued development
+
+Continue working on React
 
 ### Useful resources
 
@@ -58,4 +65,14 @@ Users should be able to:
 
 ## Author
 
+- Frontend Mentor - [@siavhnz](https://www.frontendmentor.io/profile/siavhnz)
+
+- github - [@siavhnz](https://www.github.com/siavhnz)
+
 ## Acknowledgments
+
+Thanks To
+
+[Frontendmentor.io](https://www.frontendmentor.io/challenges) - for their Excitement challenges  
+
+[Perfect Pixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en) - for such a great extension
